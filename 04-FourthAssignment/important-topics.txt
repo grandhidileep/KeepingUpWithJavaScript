@@ -1,0 +1,49 @@
+map in arrays
+    transform or extract data from list of objects.
+    return value or an object which has to be present in the resultant 
+    array.
+
+filter in arrays
+    to extract set of objects matching the criteria
+    function has to sent as parameter which will return a boolean, which will
+    return true if element has to be included.
+
+
+forEach in arrays
+    can be used to perform particular operation on each array element
+
+default value for function parameters introduced in es6 it can used for
+primitives and objects
+
+syntax function(x=5,y=6){
+    //return something
+}
+
+//es 5 way
+Array.prototype.slice.call(arguments,logAllArguments.length)
+call is used on array like objects but not arrays.
+to transform result into a array.
+
+//rest parameters for functions
+usage function (x,...restParams){
+    //all the extra params passed will be there in 
+    // rest params which is array
+}
+
+//constructor functions ;
+
+function NewObject(objparam1,objparam2)
+{
+    this.something1=objparam1;
+    this.something2=objparam2;
+}
+
+objinst1 = new NewObject(1,2);
+objinst2 = new NewObject(3,4);
+
+//constructor functions cannot be declared with arrow function.
+
+//arrow funtions doesnt create a new context .
+//while it is getting executed
+//they inherit the context from where they are getting executed.
+
