@@ -1,0 +1,14 @@
+//event listeners in html
+
+//mouseup
+//mousedown
+//click
+
+//dom loading events
+
+"DOMContentLoaded" --> event which will be triggered after html content loaded.
+document.addEventListener("DOMContentLoaded",functiontoBeInvokedAfterLoad);
+window.addEventListener("load",someFunctionUWannaInvokeAfterResourceLoad);
+
+//todo read abt types of browser events from mozilla developer network
+

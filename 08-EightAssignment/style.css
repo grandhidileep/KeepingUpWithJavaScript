@@ -1,0 +1,17 @@
+.X {
+    background-color: red;
+}
+
+.O {
+    background-color: black;
+}
+
+.row {
+    float: right;
+}
+
+.square {
+    border: solid teal;
+    height: 100px;
+    width: 100px;
+}
