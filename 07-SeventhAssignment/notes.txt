@@ -1,0 +1,43 @@
+document.body.innerHTML ;
+document.body.innerText ;
+//getting element by tag .
+document.getElementsByTagName("P");
+//used to fetch the element with specificId
+document.getElementById("specificId");
+
+//inner query can also be performed
+const spans= p1.getElementsByTagName("span") ;
+for(const element of spans){
+	element.innerHTML="<h1>Chaged It!!</h1>" ;	
+}
+
+//query selectors in css n js
+document.querySelector("criteria") -> would fetch only 
+one element matching the criteria.
+
+//query selector multiple
+document.querySelectorAll("criteria") -> would fetch multiple
+element belonging to the criteria.
+
+//we can use element type , defined classes and subtags in the specified
+classes as part of our query selector.
+document.querySelector(".myClass myComponent");
+
+//fetching parent node of a particular div
+
+for a div with a particular id we can fetch parent node for that div
+using div.parentNode and we can perform different operations like changing 
+style etc.
+
+
+//ids and classes.
+obtain the classes of document
+
+div.classList -> give list of classes list
+div.className -> gives space seperated values of classes
+div.classList.toggle("foo") -> toggle the behavior removes cllass if 
+its not there adds it if it is removed.
+
+//elements 
+
+element.appendChild(element which is created).

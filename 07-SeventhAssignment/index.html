@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<h1>Seventh Assignment</h1>
+<h2>Rectangle Demo #1</h2>
+
+<head>
+    <title>Seventh Assignment</title>
+</head>
+<style>
+    .rectangle {
+        width: 100px;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <div id="content"></div>
+    <script>
+        const content = document.getElementById("content");
+
+        // function generates color code upto 16 colors
+        const generateColorCode = (inp) => {
+            let colorCode ="";
+
+            if (inp > 16) {
+                inp %= 16;
+            }
+            switch (inp) {
+                case 10:
+                    inp = "A";
+                    break;
+                case 11:
+                    inp = "B";
+                    break;
+                case 12:
+                    inp = "C";
+                    break;
+                case 13:
+                    inp = "D";
+                    break;
+                case 14:
+                    inp = "E";
+                    break;
+                case 15:
+                    inp = "F";
+                    break;
+            }
+
+            for (let j = 0; j < 6; j++) {
+                colorCode += inp;
+            }
+            return "#"+colorCode;
+        }
+        console.log("Here are rectangle IDs");
+        for (let i = 0; i < 10;i++) {
+            const childRect = document.createElement("div");
+					childRect.className += "rectangle";
+                    content.appendChild(childRect);
+					const hexCode = generateColorCode(i);
+					childRect.style.background = hexCode;
+                    childRect.id = "r"+i ;
+                    console.log(childRect.id);
+					const childHexCode =document.createElement("P");
+					childHexCode.innerText = hexCode ;
+                    childHexCode.id =- "p"+i ;
+					content.appendChild(childHexCode);
+        }
+        content.id ="rectangleWrapper";
+        content.style.paddingTop="50px";
+        content.style.paddingLeft="50px";
+        content.style.paddingRight="50px";
+        content.style.paddingBottom="0px";
+    </script>
+</body>
+</html>
